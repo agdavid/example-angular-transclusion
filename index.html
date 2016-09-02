@@ -3,8 +3,13 @@
 <head>
   <title></title>
 </head>
-<body>
-
+<body ng-app="app">
+  <outer-directive>
+    This will be transcluded into the template of the outerDirective directive.
+    <inner-directive>
+      This will be transcluded into the template of the innerDirective directive.
+    </inner-directive> 
+  </outer-directive>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 </body>
 </html>
